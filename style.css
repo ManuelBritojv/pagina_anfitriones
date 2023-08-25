@@ -2,6 +2,11 @@
     background: rgb(31,99,244);
     background: linear-gradient(90deg, rgba(31,99,244,1) 0%, rgba(58,42,166,1) 35%, rgba(0,0,0,1) 100%);
 }
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+  
  body {
     color: #333;
     margin: 0;
@@ -82,6 +87,9 @@
 .coding_img img{
 width: 70%;
 }
+.coding_img, .coding_text { 
+    animation: fadeIn 1s; 
+}
 /*Infant*/
 .infant{
     padding: 100px 0;
@@ -119,11 +127,21 @@ width: 70%;
     justify-content: flex-end;
     align-items: center;
 }
+.infant_img, .infant_text { 
+    animation: fadeIn 2s; 
+}
 .infant_img img{
     width: 70%;
 }
 
 /*Cards*/
+#Anfitriones{
+    background: rgb(31,99,244);
+    background: linear-gradient(90deg, rgba(31,99,244,1) 0%, rgba(58,42,166,1) 35%, rgba(0,0,0,1) 100%);
+}
+#mantenimiento{
+    background-color: black;
+}
 /*ICCP*/
 
 .iccp_text{
@@ -152,6 +170,15 @@ width: 70%;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5); 
+}
+#IccpOficial{
+    border-radius: 20px;
+    border-color: rgb(255, 34, 119);
+    background-color: rgb(255, 34, 119);
+    font-weight: bolder;
+}
+#IccpOficial:hover{
+    color: grey;
 }
 
 
