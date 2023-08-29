@@ -2,12 +2,7 @@
     background: rgb(31,99,244);
     background: linear-gradient(90deg, rgba(31,99,244,1) 0%, rgba(58,42,166,1) 35%, rgba(0,0,0,1) 100%);
 }
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-  
- body {
+body {
     color: #333;
     margin: 0;
     padding: 0;
@@ -24,24 +19,27 @@
     background: rgb(31,99,244);
     background: linear-gradient(90deg, rgba(31,99,244,1) 0%, rgba(58,42,166,1) 35%, rgba(0,0,0,1) 100%);
 }
-  .card {
+.card {
     border: none;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s;
-  }
-  .card:hover {
+}
+.card:hover {
     transform: translateY(-5px);
-  }
-  .btn-primary {
+}
+.card-text{
+    font-size: 14.5px;
+}
+.btn-primary {
     background-color: #007bff;
     border-color: #007bff;
-  }
-  .btn-primary:hover {
+}
+.btn-primary:hover {
     background-color: #0056b3;
     border-color: #0056b3;
-  }
-  footer {
+}
+footer {
     display: flex;
     background-color: #333;
     color: #fff;
@@ -49,7 +47,15 @@
     text-align: center;
 }
 .row{
-    padding: 20px 0 18px;
+    display: grid!important;
+    grid-template-columns: repeat(4,2fr);
+}
+.col-md-3 {
+    max-width: none!important;
+    margin-bottom: 3rem!important;  
+}
+.mt-6{
+    padding: 20px 0;
 }
 /*Coding*/
 .coding{
@@ -179,8 +185,39 @@ width: 70%;
 #IccpOficial:hover{
     color: grey;
 }
+/*ScrollBar*/
+::-webkit-scrollbar {
+    width: 10px;
+}
 
+::-webkit-scrollbar-track {
+    background: #363636;
+}
 
+::-webkit-scrollbar-thumb {
+    background: rgb(25, 79, 194);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(16, 52, 131);
+}
+
+.col-md-12{
+    padding: 20px 0 18px;
+}
+@media screen and (max-width:1200px){
+    .row{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}
+@media screen and (max-width:515px){
+    .row{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+}
 @media screen and (max-width: 960px) {
     /*Nav*/
     .nav-item a{
@@ -206,4 +243,8 @@ width: 70%;
     .infant_img{
         justify-content: center;
     }
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
