@@ -29,7 +29,10 @@ body {
     transform: translateY(-5px);
 }
 .card-text{
-    font-size: 14.5px;
+    font-size: 14px;
+}
+.card-body{
+    padding: 15px!important;
 }
 .btn-primary {
     background-color: #007bff;
